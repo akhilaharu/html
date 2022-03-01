@@ -1,0 +1,84 @@
+<!DOCTYPE hmtl>
+<html>
+<head>	 
+  <title>HTML Lab1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+  body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT14_DyooE5sLLfhRZ1bdGyO8JzN-lITT6T_g&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  input[type=text],input[type=password]{
+    width: 250px;
+    border-radius: 10px;
+  }
+  #signin{
+    border: 0;
+    margin-top: 15px;
+    width: 375px;
+    border-radius: 10px;
+    color: white;
+  }
+  .top,span{
+    font-weight:600;
+    color: darkred;
+  }
+  p{
+    font-size: 30px;
+    text-align: center;
+    color: black;
+  }
+  fieldset{
+    border: 1px lightgrey;
+    background-color: white;
+    border-radius: 10px;
+    line-height: 30px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 50px;
+  }
+</style>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-5"></div>
+        <fieldset>
+          <form align="center">
+            <p>SignUp</p>
+            <div class="top">Name </div>
+            <input type="text" id="name" name="name" placeholder="Please enter the name" maxlength="25" required=""><br>
+            <div class="top">Email</div>
+            <input type="text" id="email" name="email" value="test@example.com" required autofocus><br>
+            <div class="top">Password</div>
+            <input type="password" id="password" name="password" required minlength="6"><br>
+            <span>EventDate<br></span>
+            <input type="date" id="eventdate" required=""><br>
+            <span>Category</span>
+            <select id="category" name="category" required>
+              <option value="student">Student</option>
+              <option value="employee">Employee</option>
+              <option value="freelancer" selected>Freelancer</option>
+            </select><br>
+            <span>Transaction: </span>
+            <input type="radio" id="tickets" name="tickets" value="1 ticket">1 ticket
+            <input type="radio" id="tickets" name="tickets" value="2 tickets" checked>2 tickets
+            <input type="radio" id="tickets" name="tickets" value="3 tickets">3 tickets
+            <br><span>Payment: </span>
+            <input type="checkbox" id="payment" name="payment" value="Online Payment" required>Online Payment<br>
+            <span>Notes</span><br>
+            <textarea rows="2" cols="50" id="notes" placeholder="Please enter notes"></textarea>
+            <input type="submit" value="Submit" id="signin" class="bg-success"/>
+          </form>
+        </fieldset>
+      </div>
+    </div> 
+</body>
+</html>
